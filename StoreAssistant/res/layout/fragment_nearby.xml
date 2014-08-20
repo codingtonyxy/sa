@@ -1,0 +1,15 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    
+    <TextView 
+        android:id="@+id/textView_fragment_nearby"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/white"
+        android:textSize="@dimen/delay_to_index_size"
+        android:text="test....."
+        />
+
+</FrameLayout>

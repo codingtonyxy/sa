@@ -1,0 +1,5 @@
+<resources>
+
+    <dimen name="delay_to_index_size">20dp</dimen>
+
+</resources>

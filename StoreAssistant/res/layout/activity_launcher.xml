@@ -1,0 +1,20 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ImageView 
+        android:id="@+id/img_start"
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:scaleType="fitXY"
+        />
+    <TextView 
+        android:id="@+id/textView_showTimerToIndex"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:textColor="@color/delay_to_index"
+        android:textSize="@dimen/delay_to_index_size"
+        />
+</FrameLayout>
+
