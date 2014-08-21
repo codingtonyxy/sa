@@ -16,6 +16,7 @@ public class ViewPagerAdapter extends PagerAdapter {
 	public ViewPagerAdapter(ArrayList<View> mListViews) {
 		super();
 		this.mListViews = mListViews;
+		
 	}
 
 	@Override

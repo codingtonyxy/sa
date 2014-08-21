@@ -12,4 +12,7 @@ public class MyConstants {
 	public static final int DELAY_TO_INDEX = 5 * 1000;
 	public static final int MSG_SHOW_COUNT_TO_INDEX = 5;
 	
+	public static int width = 0;
+	public static int height = 0;
+	
 }

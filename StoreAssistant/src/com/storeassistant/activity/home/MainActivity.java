@@ -1,10 +1,12 @@
 package com.storeassistant.activity.home;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.view.WindowManager;
 import android.widget.LinearLayout;
 import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
@@ -14,6 +16,7 @@ import com.storeassistant.activity.home.fragment.FragmentMain;
 import com.storeassistant.activity.home.fragment.FragmentMall;
 import com.storeassistant.activity.home.fragment.FragmentNearBy;
 import com.storeassistant.activity.home.fragment.FragmentPcenter;
+import com.storeassistant.appInfo.MyConstants;
 
 public class MainActivity extends FragmentActivity{
 
@@ -24,6 +27,10 @@ public class MainActivity extends FragmentActivity{
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		
+		WindowManager wm = (WindowManager) this.getSystemService(Context.WINDOW_SERVICE);
+		MyConstants.width = wm.getDefaultDisplay().getWidth();
+		MyConstants.height = wm.getDefaultDisplay().getHeight();
 		
 		fragmentManager = getSupportFragmentManager();
 		radioGroup = (RadioGroup) findViewById(R.id.radio_group);

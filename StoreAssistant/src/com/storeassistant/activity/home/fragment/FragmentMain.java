@@ -19,6 +19,7 @@ import android.widget.ImageView;
 import android.widget.ImageView.ScaleType;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+import android.widget.ScrollView;
 import android.widget.Toast;
 
 import com.storeassistant.R;
@@ -32,6 +33,7 @@ public class FragmentMain extends Fragment {
 	
 	private AsyImageLoaderNoParams loader=new AsyImageLoaderNoParams();
 	private LinearLayout scrollPointContainer;
+	private ScrollView scrollViewTools;
 	private ArrayList<View> viewPagerViews = new ArrayList<View>();
 	private ViewPager viewPager;
 	private ImageView[] circles;
@@ -49,6 +51,11 @@ public class FragmentMain extends Fragment {
 		
 		viewPager=(ViewPager)view.findViewById(R.id.main_viewpager);
 		scrollPointContainer = (LinearLayout)view.findViewById(R.id.scroll_point_container);
+		scrollViewTools = (ScrollView)view.findViewById(R.id.scrollView_tools);
+		int height = MyConstants.height;
+		
+		android.widget.LinearLayout.LayoutParams params = new android.widget.LinearLayout.LayoutParams(MyConstants.width, height-60-130);
+		scrollViewTools.setLayoutParams(params);
 		
 		Message msg = handler.obtainMessage();
 		msg.what = msgViewPager;
@@ -176,7 +183,6 @@ public class FragmentMain extends Fragment {
 				msg.what = msgAutoPager;
 				msg.arg1 = currentPagerIndex++;
 				msg.sendToTarget();
-				;
 			}
 		}
 	};

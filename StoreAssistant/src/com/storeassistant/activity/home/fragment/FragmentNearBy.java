@@ -14,7 +14,7 @@ public class FragmentNearBy extends Fragment {
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		View view = inflater.inflate(R.layout.fragment_nearby, container, false);
-		TextView textView = (TextView)view.findViewById(R.id.textView_fragment_main);
+		TextView textView = (TextView)view.findViewById(R.id.textView_fragment_nearby);
 		textView.setText("FragmentNearBy");
 		return view;
 	}

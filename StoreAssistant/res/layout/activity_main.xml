@@ -8,6 +8,7 @@
         android:id="@+android:id/container_fragment"
     	android:layout_width="fill_parent"
     	android:layout_height="wrap_content"
+    	android:orientation="vertical"
     	>
     </LinearLayout>
     <TabHost 
